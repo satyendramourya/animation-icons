@@ -1,0 +1,24 @@
+<svg class="pause-button" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pause-button-title">
+    <title id="pause-button-title">Animated Pause Button</title>
+    <style>
+        .pause-button {
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+        .pause-button:hover {
+            transform: scale(1.1);
+        }
+        .pause-button__bar {
+            transition: transform 0.3s ease-out;
+        }
+        .pause-button:hover .pause-button__bar:first-child {
+            transform: translateY(-2px);
+        }
+        .pause-button:hover .pause-button__bar:last-child {
+            transform: translateY(2px);
+        }
+    </style>
+    <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="2" fill="none"/>
+    <rect class="pause-button__bar" x="9" y="8" width="2" height="8" fill="#000000"/>
+    <rect class="pause-button__bar" x="13" y="8" width="2" height="8" fill="#000000"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg class="shopping-cart" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="shopping-cart-title">
+    <title id="shopping-cart-title">Animated Shopping Cart</title>
+    <style>
+        .shopping-cart {
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+        .shopping-cart:hover {
+            transform: scale(1.1);
+        }
+        .shopping-cart__wheel {
+            transition: transform 0.3s ease-out;
+        }
+        .shopping-cart:hover .shopping-cart__wheel {
+            transform: rotate(90deg);
+        }
+    </style>
+    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="shopping-cart__wheel" cx="9" cy="21" r="1" fill="#000000"/>
+    <circle class="shopping-cart__wheel" cx="20" cy="21" r="1" fill="#000000"/>
+</svg>

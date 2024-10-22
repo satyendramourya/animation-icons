@@ -1,0 +1,20 @@
+<svg class="download-arrow" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="download-arrow-title">
+    <title id="download-arrow-title">Animated Download Arrow</title>
+    <style>
+        .download-arrow {
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+        .download-arrow:hover {
+            transform: scale(1.1);
+        }
+        .download-arrow__arrow {
+            transition: transform 0.3s ease-out;
+        }
+        .download-arrow:hover .download-arrow__arrow {
+            transform: translateY(2px);
+        }
+    </style>
+    <path class="download-arrow__arrow" d="M12 4v12m0 0l-4-4m4 4l4-4" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 21H4" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

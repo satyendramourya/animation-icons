@@ -1,0 +1,27 @@
+<svg class="hamburger-menu" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburger-menu-title">
+    <title id="hamburger-menu-title">Animated Hamburger Menu</title>
+    <style>
+        .hamburger-menu {
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+        .hamburger-menu:hover {
+            transform: scale(1.1);
+        }
+        .hamburger-menu__line {
+            transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+        }
+        .hamburger-menu:hover .hamburger-menu__line:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+        .hamburger-menu:hover .hamburger-menu__line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-menu:hover .hamburger-menu__line:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+    </style>
+    <path class="hamburger-menu__line" d="M4 6H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <path class="hamburger-menu__line" d="M4 12H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <path class="hamburger-menu__line" d="M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+</svg>

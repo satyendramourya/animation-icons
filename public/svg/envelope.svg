@@ -1,0 +1,39 @@
+<svg class="envelope" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="envelope-title">
+    <title id="envelope-title">Animated Envelope</title>
+    <style>
+        .envelope {
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+        .envelope__flap {
+            transform-origin: 50% 0;
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+        .envelope:hover .envelope__flap {
+            transform: translateX(25%) translateY(-20%) rotate(30deg);
+        }
+        .envelope__body {
+            transition: fill 0.3s ease-out, filter 0.3s ease-out;
+        }
+        
+        .envelope__letter {
+            transform-origin: 0 100%;
+            transition: transform 0.4s ease-out, fill 0.3s ease-out;
+        }
+        .envelope:hover .envelope__letter {
+            transform: translateY(-20%);
+            fill: #71717a;
+        }
+        .envelope__content {
+            transform: translateY(2px);
+        }
+    </style>
+    <g class="envelope__content">
+        <rect class="envelope__letter" x="7" y="12" width="10" height="5" rx="1" fill="#ffffff" />
+        <path class="envelope__body" d="M4 16V10.2427C4 10.1312 4.11735 10.0587 4.21708 10.1085L10.6584 13.3292C11.5029 13.7515 12.4971 13.7515 13.3416 13.3292L19.7829 10.1085C19.8827 10.0587 20 10.1312 20 10.2427V16C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16Z" fill="#222222"/>
+        <path class="envelope__flap" d="M4 8V8.90729C4 8.96411 4.0321 9.01605 4.08292 9.04146L10.6584 12.3292C11.5029 12.7515 12.4971 12.7515 13.3416 12.3292L19.9171 9.04146C19.9679 9.01605 20 8.96411 20 8.9073V8C20 6.89543 19.1046 6 18 6H6C4.89543 6 4 6.89543 4 8Z" fill="#7E869E" fill-opacity="0.25"/>
+    </g>
+</svg>
