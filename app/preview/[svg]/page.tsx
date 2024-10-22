@@ -1,6 +1,6 @@
 'use client';
 
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -13,7 +13,6 @@ const getSvgName = (param: string | string[]): string => {
 
 export default function SVGPreviewPage() {
 	const params = useParams();
-	const router = useRouter();
 	const [svgContent, setSvgContent] = useState<string>('');
 
 	const svgName = getSvgName(params.svg);
