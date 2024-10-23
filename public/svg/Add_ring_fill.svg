@@ -1,3 +1,23 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM13 13V17H11V13H7V11H11V7H13V11H17V13H13Z" fill="#222222"/>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="add-ring-fill">
+<style> 
+.add-ring-fill {
+  transition: transform 0.3s ease;
+}
+
+.add-ring-fill:hover .plus {
+  transform-origin: center;
+  animation: gentleSpin 0.5s ease-in-out forwards;
+}
+
+@keyframes gentleSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+ </style>
+<path class="circle" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="#222222"/>
+<path class="plus" d="M13 13V17H11V13H7V11H11V7H13V11H17V13H13Z" fill="#FFFFFF"/>
 </svg>

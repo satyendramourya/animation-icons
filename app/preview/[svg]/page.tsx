@@ -66,7 +66,7 @@ export default function SVGPreviewPage() {
 					<div className='w-full md:w-1/2'>
 						<div className='h-64 flex items-center justify-center rounded-lg border border-gray-200'>
 							<div
-								className='w-32 h-32 flex items-center justify-center hover:scale-110 transition-all duration-300'
+								className=' flex items-center justify-center hover:scale-110 transition-all duration-300'
 								dangerouslySetInnerHTML={{ __html: svgContent }}
 							/>
 						</div>

@@ -1,4 +1,9 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6L12 18" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
-<path d="M18 12L6 12" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="add-icon">
+  <style>
+    .add-icon { transition: transform 0.3s ease; }
+    .add-icon:hover .plus { transform-origin: center; animation: gentleSpin 0.5s ease-in-out forwards; }
+    @keyframes gentleSpin { from { transform: rotate(0deg); } to { transform: rotate(45deg); } }
+  </style>
+  <path class="plus" d="M12 6L12 18" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+  <path class="plus" d="M18 12L6 12" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
 </svg>

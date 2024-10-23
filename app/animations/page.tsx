@@ -92,7 +92,7 @@ export default function AnimationsPage() {
 						className='w-full p-2 border border-gray-300 rounded'
 					/>
 				</div>
-				<div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 xl:grid-cols-10 gap-4'>
+				<div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8  gap-4'>
 					{filteredSvgs.map((file) => (
 						<Link key={file} href={`/preview/${file}`} className='flex flex-col items-center group cursor-pointer'>
 							<div className='w-16 h-16 bg-white rounded-lg flex items-center justify-center group-hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm'>
@@ -104,7 +104,7 @@ export default function AnimationsPage() {
 									Your browser does not support SVG
 								</object>
 							</div>
-							<p className='text-xs text-gray-600 text-center mt-2 line-clamp-2'>
+							<p className='text-xs text-gray-600 text-center mt-2 line-clamp-2 text-wrap'>
 								{file.replace('.svg', '').replace(/-/g, ' ')}
 							</p>
 						</Link>
